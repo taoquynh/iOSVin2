@@ -1,0 +1,6 @@
+framework module Pods_HomeWorkDay2_HomeWorkDay2UITests {
+  umbrella header "Pods-HomeWorkDay2-HomeWorkDay2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
