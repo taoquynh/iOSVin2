@@ -13,3 +13,7 @@ Layout giao diện Sửa hồ sơ (Layout bằng snapkit, Kung_pao (Layout bằn
 - Thêm scrollView vào giao diện Profile, Login, Register
 - Làm ứng dụng PageControl tự động scroll
 - Thêm animate khi cuộn pageControl
+
+## Day4
+- Bài tập về nhà Day4:
+- Làm giao diện Báo cáo sự cố và Chi tiết sự cố
