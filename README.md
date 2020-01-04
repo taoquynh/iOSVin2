@@ -18,6 +18,10 @@ Layout giao diện Sửa hồ sơ (Layout bằng snapkit, Kung_pao (Layout bằn
 - Bài tập về nhà Day4:
 - Làm giao diện Báo cáo sự cố và Chi tiết sự cố
 
+## Day5: 
+- Bài tập về nhà Day5:
+- Ghép tất cả các api vào màn hình
+
 ## Domain: http://45.118.145.149:8100
 1. API đăng ký
 - URL: /register
