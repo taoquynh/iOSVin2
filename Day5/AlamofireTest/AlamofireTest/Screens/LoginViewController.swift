@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireObjectMapper
 import Alamofire
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var phoneTextField: UITextField!
@@ -30,14 +31,26 @@ class LoginViewController: UIViewController {
         
         let url = "http://45.118.145.149:8100/login"
         Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseObject { [weak self] (response: DataResponse<ObjectResult>) in
-            guard let _ = self, let res = response.result.value else { return }
+            guard let strongSelf = self, let res = response.result.value else { return }
             if res.code == 0 {
-                guard let data = res.data else { return }
+                guard let data = res.data as? DataResult else { return }
                 let token = data.token
                 UserDefaults.standard.set(token, forKey: "token")
+                let homeVC = HomeViewController()
+                let navigation = UINavigationController(rootViewController: homeVC)
+                navigation.modalPresentationStyle = .fullScreen
+                strongSelf.present(navigation, animated: true, completion: nil)
             }else{
                 print(res.message)
             }
         }
+        
     }
+    
+    @IBAction func goToRegister(_ sender: Any) {
+        let registerVC = RegisterViewController()
+        registerVC.modalPresentationStyle = .fullScreen
+        present(registerVC, animated: true, completion: nil)
+    }
+    
 }

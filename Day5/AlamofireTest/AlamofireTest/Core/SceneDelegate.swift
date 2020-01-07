@@ -21,13 +21,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = _windowScene
+        let token = UserDefaults.standard.string(forKey: "token") ?? ""
+        if token.isEmpty {
+            startLogin()
+        }else{
+            startMain()
+        }
+    }
+
+    func startLogin(){
         let mainVC = LoginViewController()
-        let navigation = UINavigationController(rootViewController: mainVC)
         
         window?.rootViewController = mainVC
         window?.makeKeyAndVisible()
     }
-
+    
+    func startMain(){
+        let mainVC = HomeViewController()
+        
+        let navigation = UINavigationController(rootViewController: mainVC)
+        window?.rootViewController = navigation
+        window?.makeKeyAndVisible()
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

@@ -62,8 +62,25 @@ class UserProfile: Mappable {
         phone <- map["phone"]
         password <- map["password"]
         avatar <- map["avatar"]
-        role <- map["role"]
         address <- map["address"]
+        role <- map["role"]
     }
 }
 
+class ObjectResult1: Mappable {
+    var responseTime = ""
+    var code = 0
+    var message = ""
+    var data: UserProfile?
+
+    required convenience init?(map: Map) {
+        self.init()
+    }
+
+    func mapping(map: Map) {
+        responseTime <- map["responseTime"]
+        code <- map["code"]
+        message <- map["message"]
+        data <- map["data"]
+    }
+}

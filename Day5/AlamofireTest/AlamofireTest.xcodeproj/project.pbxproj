@@ -14,6 +14,12 @@
 		A901917E23C05C7B00AB4010 /* AlamofireObjectMapperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A901917A23C05C7B00AB4010 /* AlamofireObjectMapperViewController.xib */; };
 		A901918123C05C9300AB4010 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A901917F23C05C9300AB4010 /* LoginViewController.swift */; };
 		A901918223C05C9300AB4010 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A901918023C05C9300AB4010 /* LoginViewController.xib */; };
+		A916B77F23C46A080069734A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916B77D23C46A080069734A /* RegisterViewController.swift */; };
+		A916B78023C46A080069734A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A916B77E23C46A080069734A /* RegisterViewController.xib */; };
+		A916B78323C473FB0069734A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916B78123C473FB0069734A /* HomeViewController.swift */; };
+		A916B78423C473FB0069734A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A916B78223C473FB0069734A /* HomeViewController.xib */; };
+		A916B78723C481D00069734A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916B78523C481D00069734A /* ProfileViewController.swift */; };
+		A916B78823C481D00069734A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A916B78623C481D00069734A /* ProfileViewController.xib */; };
 		A9430B90239601C50008B23B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9430B8C239601C50008B23B /* MainViewController.xib */; };
 		A9430B91239601C50008B23B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9430B8D239601C50008B23B /* MainViewController.swift */; };
 		A9430B93239601C50008B23B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9430B8F239601C50008B23B /* Menu.swift */; };
@@ -38,6 +44,12 @@
 		A901917A23C05C7B00AB4010 /* AlamofireObjectMapperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlamofireObjectMapperViewController.xib; sourceTree = "<group>"; };
 		A901917F23C05C9300AB4010 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A901918023C05C9300AB4010 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A916B77D23C46A080069734A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A916B77E23C46A080069734A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A916B78123C473FB0069734A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A916B78223C473FB0069734A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A916B78523C481D00069734A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A916B78623C481D00069734A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		A9430B8C239601C50008B23B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		A9430B8D239601C50008B23B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9430B8F239601C50008B23B /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -83,6 +95,12 @@
 				A901917A23C05C7B00AB4010 /* AlamofireObjectMapperViewController.xib */,
 				A901917F23C05C9300AB4010 /* LoginViewController.swift */,
 				A901918023C05C9300AB4010 /* LoginViewController.xib */,
+				A916B77D23C46A080069734A /* RegisterViewController.swift */,
+				A916B77E23C46A080069734A /* RegisterViewController.xib */,
+				A916B78123C473FB0069734A /* HomeViewController.swift */,
+				A916B78223C473FB0069734A /* HomeViewController.xib */,
+				A916B78523C481D00069734A /* ProfileViewController.swift */,
+				A916B78623C481D00069734A /* ProfileViewController.xib */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -218,6 +236,9 @@
 				A9430B90239601C50008B23B /* MainViewController.xib in Resources */,
 				A901918223C05C9300AB4010 /* LoginViewController.xib in Resources */,
 				A901917E23C05C7B00AB4010 /* AlamofireObjectMapperViewController.xib in Resources */,
+				A916B78023C46A080069734A /* RegisterViewController.xib in Resources */,
+				A916B78823C481D00069734A /* ProfileViewController.xib in Resources */,
+				A916B78423C473FB0069734A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +294,8 @@
 				A9430B93239601C50008B23B /* Menu.swift in Sources */,
 				A96A72552395FFE300629B30 /* ViewController.swift in Sources */,
 				A96A72512395FFE300629B30 /* AppDelegate.swift in Sources */,
+				A916B77F23C46A080069734A /* RegisterViewController.swift in Sources */,
+				A916B78723C481D00069734A /* ProfileViewController.swift in Sources */,
 				A9430BA1239604970008B23B /* User.swift in Sources */,
 				A96A72532395FFE300629B30 /* SceneDelegate.swift in Sources */,
 				A9430BA323961A470008B23B /* Person.swift in Sources */,
@@ -280,6 +303,7 @@
 				A901917C23C05C7B00AB4010 /* AlamofireObjectMapperViewController.swift in Sources */,
 				A901915723C052C700AB4010 /* ModelIssue.swift in Sources */,
 				A9430B91239601C50008B23B /* MainViewController.swift in Sources */,
+				A916B78323C473FB0069734A /* HomeViewController.swift in Sources */,
 				A901918123C05C9300AB4010 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

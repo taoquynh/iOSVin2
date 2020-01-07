@@ -20,16 +20,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }else{
             window = UIWindow(frame: UIScreen.main.bounds)
-            
-            let mainVC = LoginViewController()
-            let navigation = UINavigationController(rootViewController: mainVC)
-            
-            window?.rootViewController = mainVC
-            window?.makeKeyAndVisible()
+            let token = UserDefaults.standard.string(forKey: "token") ?? ""
+            if token.isEmpty {
+                startLogin()
+            }else{
+                startMain()
+            }
         }
         return true
     }
 
+    func startLogin(){
+        let mainVC = LoginViewController()
+        
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+    }
+    
+    func startMain(){
+        let mainVC = HomeViewController()
+        let navigation = UINavigationController(rootViewController: mainVC)
+        window?.rootViewController = navigation
+        window?.makeKeyAndVisible()
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
