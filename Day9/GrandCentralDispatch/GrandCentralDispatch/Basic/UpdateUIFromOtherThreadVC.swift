@@ -20,7 +20,9 @@ class UpdateUIFromOtherThreadVC: UIViewController {
             for i in 1...5 {
                 sleep(1)
                 print(i)
-                self.label.text = "\(i)"
+                DispatchQueue.main.async {
+                    self.label.text = "\(i)"
+                }
             }
         }
     }
@@ -28,6 +30,7 @@ class UpdateUIFromOtherThreadVC: UIViewController {
         queue.async {
             for i in 6...10 {
                 sleep(1)
+                print(i)
                 DispatchQueue.main.async {
                     self.label.text = "\(i)"
                 }                

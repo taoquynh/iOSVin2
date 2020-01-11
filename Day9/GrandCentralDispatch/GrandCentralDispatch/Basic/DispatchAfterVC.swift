@@ -10,7 +10,7 @@ class DispatchAfterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
             print("Hello world")
         }

@@ -6,12 +6,13 @@
 import UIKit
 
 class SyncVsAsyncVC: UIViewController {
-    let queue = DispatchQueue(label: "com.test.api", qos: .background, attributes: .concurrent)
+//    let queue = DispatchQueue(label: "com", qos: .background, attributes: .concurrent) // concurrent
+    let queue = DispatchQueue(label: "com", qos: .background) //serial
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
+    
     @IBAction func runTasksInSync(_ sender: Any) {
         queue.sync {
             for i in 1...5 {
@@ -46,13 +47,13 @@ class SyncVsAsyncVC: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

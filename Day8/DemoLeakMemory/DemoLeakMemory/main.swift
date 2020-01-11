@@ -58,13 +58,13 @@ import Foundation
 //    var apartment: Apartment?
 //    deinit { print("\(name) is being deinitialized") }
 //}
-
+//
 //class Apartment {
 //    let name: String
 //    init(name: String) {
 //        self.name = name
 //    }
-//    unowned var owner: Person?
+//    weak var owner: Person? // sử dụng weak hoặc unnowded để biến owner trở nên yếu hơn -> tham chiếu của nó sẽ yếu hơn
 //    deinit { print("Apartment \(name) is being deinitialized") }
 //}
 //
@@ -87,14 +87,15 @@ class Fibonacci{
         self.value = value
     }
 
-    lazy var fibonacci: () -> Int = {
+    lazy var fibonacci: () -> Int = { [weak self] in
         var a = 0
         var b = 1
 
-        let max = self.value
-//        guard let max = self?.value else {
-//            fatalError()
-//        }
+        guard let strongself = self else {
+            fatalError()
+        }
+        let max = strongself.value
+        
         for _ in 0..<max{
             let temp = a
             a = b

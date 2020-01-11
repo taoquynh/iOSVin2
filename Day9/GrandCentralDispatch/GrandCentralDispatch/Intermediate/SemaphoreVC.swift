@@ -39,6 +39,7 @@ class SemaphoreVC: UIViewController {
         btnStart.setTitle("Start \(Int(value)) tasks", for: .normal)
         
     }
+    
     @IBAction func onStartSemaphoreTasks(_ sender: Any) {
         let value = Int(floor(slider.value))
         semaphore = DispatchSemaphore(value: value)
